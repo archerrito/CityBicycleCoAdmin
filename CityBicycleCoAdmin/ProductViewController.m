@@ -9,6 +9,10 @@
 #import "ProductViewController.h"
 #import "Accessory.h"
 #import "Bicycle.h"
+#import "EditBicycleViewController.h"
+#import "EditAccessoryViewController.h"
+#import "AddBicycleViewController.h"
+#import "AddAccessoryViewController.h"
 
 #import <Parse/Parse.h>
 
@@ -17,6 +21,7 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *productTableview;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *productSegmentControl;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *addProductTypeBarButtonItem;
 
 //Two Types of products, pick one based on segment control
 @property NSArray *currentProductArray;
@@ -77,10 +82,26 @@
 }
 - (IBAction)onSegmentControlPressed:(UISegmentedControl *)sender
 {
+    if (self.productSegmentControl.selectedSegmentIndex == 0) {
+        self.addProductTypeBarButtonItem.title = @"Add Bicycle";
+    } else {
+        self.addProductTypeBarButtonItem.title = @"Add Accessory";
+    }
+
     [self refreshTableViewData];
 }
 
 - (IBAction)onButtonPressedAddProduct:(id)sender {
+
+    if (self.productSegmentControl.selectedSegmentIndex == 0)
+    {
+        [self performSegueWithIdentifier:@"addBicycle" sender:sender];
+    }
+    else
+    {
+        [self performSegueWithIdentifier:@"addAccessory" sender:sender];
+    }
+
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,6 +126,41 @@
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.currentProductArray.count;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+
+    if (self.productSegmentControl.selectedSegmentIndex == 0) {
+        [self performSegueWithIdentifier:@"editBicycle" sender:cell];
+    } else {
+        [self performSegueWithIdentifier:@"editAccessory" sender:cell];
+    }
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"editBicycle"])
+    {
+
+//        UINavigationController *naviVC = [segue destinationViewController];
+//        //Because embedded in Nav controller, specify index of child controller
+//        EditBicycleViewController *editBicycleVC = naviVC.childViewControllers[0];
+//        NSInteger bicycleIndexSelected = [self.productTableview indexPathForCell:sender].row;
+//        Bicycle *bicycle = [self.bicycleArray objectAtIndex:bicycleIndexSelected];
+//        
+//        editBicycleVC.bicycleFromParse = bicycle;
+
+
+    }
+    else if ([segue.identifier isEqualToString:@"editAccessory"])
+    {
+        EditAccessoryViewController *editAccessoryVC = [segue destinationViewController];
+        NSInteger accessoryIndexSelected = [self.productTableview indexPathForCell:sender].row;
+        Accessory *accessory = [self.accessoryArray objectAtIndex:accessoryIndexSelected];
+        editAccessoryVC.accessoryFromParse = accessory;
+    }
 }
 
 

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8758D6DE1A34E4A600172026 /* EditBicycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8758D6DD1A34E4A600172026 /* EditBicycleViewController.m */; };
+		8758D6E11A34E4E400172026 /* EditAccessoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8758D6E01A34E4E400172026 /* EditAccessoryViewController.m */; };
+		8758D6E41A34E4FB00172026 /* AddBicycleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8758D6E31A34E4FB00172026 /* AddBicycleViewController.m */; };
+		8758D6E71A34E50F00172026 /* AddAccessoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8758D6E61A34E50F00172026 /* AddAccessoryViewController.m */; };
 		87BB315F1A339F9900462501 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BB315E1A339F9900462501 /* main.m */; };
 		87BB31621A339F9900462501 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BB31611A339F9900462501 /* AppDelegate.m */; };
 		87BB31651A339F9900462501 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BB31641A339F9900462501 /* RootViewController.m */; };
@@ -15,8 +19,6 @@
 		87BB316D1A339F9900462501 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87BB316B1A339F9900462501 /* LaunchScreen.xib */; };
 		87BB31791A339F9900462501 /* CityBicycleCoAdminTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BB31781A339F9900462501 /* CityBicycleCoAdminTests.m */; };
 		87BB31841A33B7CC00462501 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BB31831A33B7CC00462501 /* ProductViewController.m */; };
-		87BB31871A33B94400462501 /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BB31861A33B94400462501 /* ProductDetailViewController.m */; };
-		87BB318A1A33BB5E00462501 /* AddProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BB31891A33BB5E00462501 /* AddProductViewController.m */; };
 		87BB318F1A33C40900462501 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BB318B1A33C40900462501 /* Bolts.framework */; };
 		87BB31901A33C40A00462501 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BB318C1A33C40900462501 /* Parse.framework */; };
 		87BB31911A33C40A00462501 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BB318D1A33C40900462501 /* ParseFacebookUtils.framework */; };
@@ -52,6 +54,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8758D6DC1A34E4A600172026 /* EditBicycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditBicycleViewController.h; path = ../EditBicycleViewController.h; sourceTree = "<group>"; };
+		8758D6DD1A34E4A600172026 /* EditBicycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditBicycleViewController.m; path = ../EditBicycleViewController.m; sourceTree = "<group>"; };
+		8758D6DF1A34E4E400172026 /* EditAccessoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EditAccessoryViewController.h; path = ../EditAccessoryViewController.h; sourceTree = "<group>"; };
+		8758D6E01A34E4E400172026 /* EditAccessoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EditAccessoryViewController.m; path = ../EditAccessoryViewController.m; sourceTree = "<group>"; };
+		8758D6E21A34E4FB00172026 /* AddBicycleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddBicycleViewController.h; path = ../AddBicycleViewController.h; sourceTree = "<group>"; };
+		8758D6E31A34E4FB00172026 /* AddBicycleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddBicycleViewController.m; path = ../AddBicycleViewController.m; sourceTree = "<group>"; };
+		8758D6E51A34E50F00172026 /* AddAccessoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddAccessoryViewController.h; path = ../AddAccessoryViewController.h; sourceTree = "<group>"; };
+		8758D6E61A34E50F00172026 /* AddAccessoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddAccessoryViewController.m; path = ../AddAccessoryViewController.m; sourceTree = "<group>"; };
 		87BB31591A339F9900462501 /* CityBicycleCoAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityBicycleCoAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BB315D1A339F9900462501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87BB315E1A339F9900462501 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,10 +77,6 @@
 		87BB31781A339F9900462501 /* CityBicycleCoAdminTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CityBicycleCoAdminTests.m; sourceTree = "<group>"; };
 		87BB31821A33B7CC00462501 /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
 		87BB31831A33B7CC00462501 /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
-		87BB31851A33B94400462501 /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
-		87BB31861A33B94400462501 /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
-		87BB31881A33BB5E00462501 /* AddProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddProductViewController.h; path = ../AddProductViewController.h; sourceTree = "<group>"; };
-		87BB31891A33BB5E00462501 /* AddProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddProductViewController.m; path = ../AddProductViewController.m; sourceTree = "<group>"; };
 		87BB318B1A33C40900462501 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		87BB318C1A33C40900462501 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		87BB318D1A33C40900462501 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
@@ -164,10 +170,14 @@
 				87BB31641A339F9900462501 /* RootViewController.m */,
 				87BB31821A33B7CC00462501 /* ProductViewController.h */,
 				87BB31831A33B7CC00462501 /* ProductViewController.m */,
-				87BB31851A33B94400462501 /* ProductDetailViewController.h */,
-				87BB31861A33B94400462501 /* ProductDetailViewController.m */,
-				87BB31881A33BB5E00462501 /* AddProductViewController.h */,
-				87BB31891A33BB5E00462501 /* AddProductViewController.m */,
+				8758D6DC1A34E4A600172026 /* EditBicycleViewController.h */,
+				8758D6DD1A34E4A600172026 /* EditBicycleViewController.m */,
+				8758D6DF1A34E4E400172026 /* EditAccessoryViewController.h */,
+				8758D6E01A34E4E400172026 /* EditAccessoryViewController.m */,
+				8758D6E21A34E4FB00172026 /* AddBicycleViewController.h */,
+				8758D6E31A34E4FB00172026 /* AddBicycleViewController.m */,
+				8758D6E51A34E50F00172026 /* AddAccessoryViewController.h */,
+				8758D6E61A34E50F00172026 /* AddAccessoryViewController.m */,
 				87BB31691A339F9900462501 /* Images.xcassets */,
 				87BB316B1A339F9900462501 /* LaunchScreen.xib */,
 				87BB31971A33CF9500462501 /* Model */,
@@ -341,14 +351,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8758D6E41A34E4FB00172026 /* AddBicycleViewController.m in Sources */,
+				8758D6E71A34E50F00172026 /* AddAccessoryViewController.m in Sources */,
 				87BB31651A339F9900462501 /* RootViewController.m in Sources */,
 				87BB31961A33CF8C00462501 /* Bicycle.m in Sources */,
+				8758D6E11A34E4E400172026 /* EditAccessoryViewController.m in Sources */,
 				87BB319A1A33D01E00462501 /* Accessory.m in Sources */,
 				87BB319D1A33D0BA00462501 /* Photo.m in Sources */,
-				87BB31871A33B94400462501 /* ProductDetailViewController.m in Sources */,
 				87BB31621A339F9900462501 /* AppDelegate.m in Sources */,
 				87BB31841A33B7CC00462501 /* ProductViewController.m in Sources */,
-				87BB318A1A33BB5E00462501 /* AddProductViewController.m in Sources */,
+				8758D6DE1A34E4A600172026 /* EditBicycleViewController.m in Sources */,
 				87BB315F1A339F9900462501 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

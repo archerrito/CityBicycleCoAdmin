@@ -1,18 +1,18 @@
 //
-//  ProductDetailViewController.m
+//  AddBicycleViewController.m
 //  CityBicycleCoAdmin
 //
-//  Created by Supreme Overlord on 12/6/14.
+//  Created by Supreme Overlord on 12/7/14.
 //  Copyright (c) 2014 Supreme Overlord. All rights reserved.
 //
 
-#import "ProductDetailViewController.h"
+#import "AddBicycleViewController.h"
 
-@interface ProductDetailViewController ()
+@interface AddBicycleViewController ()
 
 @end
 
-@implementation ProductDetailViewController
+@implementation AddBicycleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
